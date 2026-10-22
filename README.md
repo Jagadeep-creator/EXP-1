@@ -61,12 +61,14 @@ b.  KCL:
 Calculation:
 
 a.   KVL:
+
 <img width="666" height="927" alt="image" src="https://github.com/user-attachments/assets/eb3ca5db-f103-4532-a6c5-4e1d3280361d" />
 
  
 
 
 b.  KCL:
+
 <img width="580" height="850" alt="image" src="https://github.com/user-attachments/assets/a132d9ab-a762-49be-8d37-dea5902a5199" />
 
 <img width="587" height="955" alt="image" src="https://github.com/user-attachments/assets/f56816d5-c58c-4f16-aee9-a06f22ee34da" />
@@ -76,13 +78,61 @@ b.  KCL:
 Tabulation:
 
 a.   KVL:
- 
+ # Experiment 1: Verification of Kirchhoff's Voltage Law (KVL)
+
+## Observation Table
+
+Supply Voltage: 100 V
+
+| S. No. | Component | Resistance (Ohm) | Voltage (V) | Current (A) |
+|---|---|---:|---:|---:|
+| 1 | R1 | 30 | 30 | 1.00 |
+| 2 | R2 | 50 | 50 | 1.00 |
+| 3 | R3 | 20 | 20 | 1.00 |
+| 4 | Supply | - | 100 | 1.00 |
+
+## KVL Verification
+
+| S. No. | Supply Voltage (V) | Sum of Voltage Drops (V) | Difference (V) |
+|---|---:|---:|---:|
+| 1 | 100 | 30 + 50 + 20 = 100 | 0 |
+
+Result: The sum of voltage drops around a closed loop equals the supply voltage. Hence, KVL is verified.
+
+---
 
 
 b.  KCL:
+# Experiment 2: Verification of Kirchhoff's Current Law (KCL)
+
+## Observation Table
+
+Supply Voltage: 50 V
+
+| S. No. | Component | Resistance (Ohm) | Voltage (V) | Current (A) |
+|---|---|---:|---:|---:|
+| 1 | R1 | 40 | 43.96 | 1.099 |
+| 2 | R2 | 10 | 6.04 | 0.604 |
+| 3 | R3 | 20 | 6.04 | 0.302 |
+| 4 | R4 | 30 | 6.04 | 0.201 |
+
+## KCL Verification
+
+| S. No. | Current Entering (A) | Current Leaving (A) | Difference (A) |
+|---|---:|---:|---:|
+| 1 | 1.099 | 0.604 + 0.302 + 0.201 = 1.107 | -0.008 |
 
 
 
-RESULT:
+| S.No | Parameter | Theoretical Value | Practical / Simulated Value |
+|---:|---|---:|---:|
+| 1 | Supply Voltage (V1) | 50 V | 50 V |
+| 2 | Total Current Entering Node (I1) | 1.10 A | 1.10 A |
+| 3 | Branch Current through R4 (I4) | 0.20 A | 0.20 A |
+| 4 | Branch Current through R3 (I3) | 0.30 A | 0.30 A |
+| 5 | Branch Current through R2 (I2) | 0.60 A | 0.60 A |
+| 6 | Sum of Leaving Currents (I4 + I3 + I2) | 1.10 A | 1.10 A |
 
-Thus, for the given circuit, Kirchhoff’s Laws, (a) KVL and (b) KCL are proved.
+**RESULT:**
+
+Thus, for the given circuit, Kirchhoff's Laws, (a) KVL and (b) KCL are proved.
